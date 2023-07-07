@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --dark-bg: #0e1327;
+    --blue-clr: #0d427d;
+    --yellow-clr: #d6ef37;
+    --white-clr: #fff;
+    --dark-bg-2: rgba(255, 255, 255, 0.1);
+    --white-clr-2: rgba(255, 255, 255, 0.9);
+    --common-padding: 1rem 3.7rem;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    background-color: var(--blue-clr);
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--common-padding);
+    border-bottom: 2px solid var(--dark-bg-2);
+}
+
+.navigation .leftBx{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navigation .leftBx .logoBx h1{
+    color: var(--white-clr-2);
+    font-size: 1.2rem;
+}
+
+.navigation .leftBx .navbar .menuItems{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navigation .leftBx .navbar .menuItems li a{
+    text-decoration: none;
+    color: var(--white-clr);
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.mainBanner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.avatarBx{
+    margin-bottom: -0.37rem;
+}
+
+.avatarBx img{
+    width: 300px;
+}
+
+.circle{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--white-clr);
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--dark-bg);
+}
+
+.btn{
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    align-self: flex-start;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    color: #000;
+    background-color: var(--white-clr);
+    padding: 1rem 2rem;
+}
+
+.btnBx{
+    display: flex; gap: 2rem;
+}
+
+.icon{
+    font-size: 2rem;
+    display: block;
+    margin: 0.3rem 0;
+    color: rgb(5, 19, 218);
+}
+
+.btnBx > div{
+    display: flex;
+    gap: 1rem;
+    color: var(--white-clr);
+}
+
+.textTagBx{
+    background-color: var(--white-clr);
+    width: 200px;
+    padding: 3rem 1.5rem;
+    align-self: center;
+}
+
+.textTagBx h3{
+    line-height: 1.4;
+}
+
+.mainBanner .leftBx{
+   width: 600px;
+   padding: 3rem;
+}
+
+.mainBanner .leftBx .subtext{
+    color: var(--white-clr-2);
+    margin: 2rem 0;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.mainBanner .rightBx{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.mainHeading{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--white-clr);
+}
+
+.colored{
+    color: var(--yellow-clr);
+}
+
+.bottomSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottomSection .leftBx{
+    padding: var(--common-padding);
+    background-color: var(--dark-bg);
+    color: var(--white-clr);
+}
+
+.bottomSection .rightBx{
+    position: relative;
+}
+
+.bottomSection .rightBx img{
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bottomSection .leftBx .workBx{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    align-items: center;
+    border-top: 2px solid var(--dark-bg-2);
+}
+
+.bottomSection .leftBx .workBx .box{
+    text-align: center;
+}
+
+.bottomSection .leftBx .ourexperts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.bottomSection .leftBx .ourexperts .expertsBx{
+    display: flex;
+}
+
+.bottomSection .leftBx .ourexperts .expertsBx .imgBx{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-left: -1rem;
+}
+
+.numberBx{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--white-clr);
+   text-align: center;
+   font-weight: 600;
+   line-height: 70px;
+    color: #000;    margin-left: -1rem;
+}
+
+.bottomSection .leftBx .ourexperts .expertsBx .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--dark-bg);
+}
+
+/* @media(max-width: 1080px){
+    .bottomSection{
+        grid-template-columns: 1fr;
+    }
+
+    .mainBanner{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+    }
+} */
